@@ -1,23 +1,251 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-   <title>图片</title>
-  </head>
-  <body>
-     <h1>人物简介</h1>
-    <p><strong>李清照</strong><em>（1084年3月13日—1155年？）</em>，号易安居士，汉族，齐州济南（今山东省济南市章丘区）人。宋代女词人，婉约词派代表，有“千古第一才女”之称。
-    李清照出生于书香门第，<a name="marker">早期生活优裕</a>，其父李格非藏书甚富，她小时候就在良好的家庭环境中打下文学基础。出嫁后与夫赵明诚共同致力于书画金石的搜集整理。
-    金兵入据中原时，流寓南方，境遇孤苦。所作词，前期多写其悠闲生活，后期多悲叹身世，情调感伤。形式上善用白描手法，自辟途径，语言清丽。
-    论词强调协律，崇尚典雅，提出词“别是一家”之说，反对以作诗文之法作词。能诗，留存不多，部分篇章感时咏史，情辞慷慨，与其词风不同。
-     <hr/>
-     &copy;北大青鸟所有
-    </p>
-    <h2>&lt;img&gt;标签</h2>
-    <img src="37d12f2eb9389b50bf2647698735e5dde7116e34.jpg" alt="占位图片描述" title="鼠标悬停显示内容" width="1000" heigth="3000" />
-    <h2>&lt;a&gt;标签</h2>
-    <a href="http://www.baidu.com" target="_blank">百度</a>
-    <a href="#marker">锚链接跳转</a>
-    <a href="mailto:471862507@qq.com">功能链接跳转</a>
-  </body>
+	<head>
+		<meta charset="UTF-8">
+		<title>163网易免费邮</title>
+		<style>
+			header{
+				 width: 1200px;
+			       margin: auto;}
+			nav{display: inline-block;
+			    position: absolute;
+			    margin: 20px;        
+			    }
+			    nav a{text-decoration: none;
+			          font-size: 12px;
+			          color: gray;
+			          }
+			    nav span{color: gray;}
+			 section{
+			 	  width: 1200px;
+			 }
+			 footer{
+			 	width: 1200px;
+			 	margin: auto;
+			 }
+			 footer span{
+			 	font-size: 12px;
+			 	color: gray;
+			 }
+			 #email{
+			 	position: absolute;
+			 	top:10px;
+			 	left:20px;
+			 	height:35px;
+			 	width: 220px;
+			 	border-radius: 3px;
+			 }
+			 #psw{
+			 	position: absolute;
+			 	top:75px;
+			 	left:20px;
+			 	height:35px;
+			 	width: 220px;
+			 	border-radius: 3px;
+			 }
+			 #bg{
+			 	background: url(img/3.jpg);
+			 	width: 1200px;
+			 	height: 500px;
+			 }
+			 #mes{
+			 	  position: absolute;
+			 	  top: 74px;
+			 	  left: 395px;
+			 	  height:400px;
+			 	  width: 500px;
+			      }
+			   .mian{
+			   	position: absolute;
+			   	top:140px;
+			   	left: 30px;
+			   	font-size: 12px;
+			   	color: gray;  	
+			   }
+			   .wang{
+			   	position: absolute;
+			   	top:140px;
+			   	right: 60px;
+			   	font-size: 12px;
+			   }
+			   .wang a{
+			   	text-decoration: none;
+			   	color: gray;
+			   }
+			   .delu{
+			   	position: absolute;
+			   	top:185px;
+			   	left: 15px;
+			   }
+			   .zuce{
+			   	position: absolute;
+			   	top: 185px;
+			   	right: 45px;
+			   }
+			   .type{
+			   	position: absolute;
+			   	top:250px;
+			    left: 15px;
+			    font-size: 10px;
+			   	color: gray;
+			   }
+			   .type select{
+			   	font-size: 10px;
+			   	color: gray;
+			   }
+			   .sll{
+			   	position: absolute;
+			   	top: 250px;
+			   	right: 45px;
+			   }
+			   .sll input{
+			   	border:hidden;
+			   	font-size: 10px;
+			   	color: gray;
+			   }
+			  #login{
+			  	position:absolute;
+			  	top: 90px;
+			  	right: 400px;
+			  	height:400px ;
+			 	width: 300px;
+			    background: white;
+			  }
+			      
+			  #login * {
+                margin: 0;
+                padding: 0;}
+              #login div{
+              	height: 380px;
+              	width: 300px;
+              }
+              
+              .tabs {
+               width: 300px;
+               float: none;
+               list-style: none;
+               position: relative;
+               margin: 80px 0 0 10px;
+               text-align: left;}
+               
+              .tabs li {
+                float: left;
+                display: block;}
+                
+              .tabs input[type="radio"] {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+               }
+              .tabs label {
+              	width: 100px;
+              	height: 30px;
+                display: block;
+               border:solid 1px;
+               padding: 14px 21px;
+               border-radius: 5px;
+               text-align: center;
+               font-size: 16px;
+               font-weight: normal;
+               text-transform: uppercase;
+               background: cyan;
+               cursor: pointer;
+                position: relative;
+               top: 4px;
+                }
+               .tabs label:hover {
+                  background: cyan;
+                 }
+               .tabs .tab-content {
+                z-index: 2;
+               display: none;
+                overflow: hidden;
+                width: 100%;
+                font-size: 15px;
+                line-height: 30px;
+                padding: 25px;
+                position: absolute;
+                top: 53px;
+                left: 0;
+                background: white;
+                 }
+               .tabs [id^="tab"]:checked + label {
+                top: 0;
+                padding-top: 17px;
+                background: white;
+                }
+                .tabs [id^="tab"]:checked ~ [id^="tab-content"] {
+                display: block;
+                }
+		</style>
+	</head>
+	<body>
+		<header>
+			<a href="#"><img src="img/1.png" alt="走进网易免费邮" /></a>
+			<nav>
+				<a href="#">邮箱黄页</a>
+				<a href="#">企业邮箱</a>
+				<a href="#">VIP邮箱</a>
+				<a href="#">国外用户登录</a>
+				<a href="#">手机版</a>
+				<a href="#">电脑版</a>
+				<a href="#">帮助</a>
+				<a href="#">常见问题</a>
+				<span>|</span>
+				<a href="#">私人助理</a>
+			</nav>
+		</header>
+		<section>
+			<div id="bg"></div>
+			<div id="mes"><ul><a href="#"><img src="img/2.png" height="500px" width="400px"/></a></ul>
+			</div>
+			<div id="login"><ul class="tabs">
+                 <li>
+                 <input type="radio" name="tabs" id="tab1" checked />
+                 <label for="tab1">二维码登录</label>
+                 <div id="tab-content1" class="tab-content">
+                 <img src="img/3.png" height="380px" width="300px" />
+                 </div>
+                 </li>
+
+                 <li>
+                 <input type="radio" name="tabs" id="tab2" />
+                 <label for="tab2">邮箱账号登录</label>
+                 <div id="tab-content2" class="tab-content">
+                 <form action="#" method="post">
+                 	<div><input id="email" type="email" placeholder="请使用邮箱账号登录" /></div>
+                 	<div><input id="psw" type="password" placeholder="密码" /></div>
+                 	<div><span class="mian"><input type="checkbox" name="mian" value="mian" />十天内免登录 </span><span class="wang"><a href="#">忘记密码？</a></span></div>
+                 	<div><span class="delu"><input type="image" src="img/4.png" height="40px" width="100px"/></span><span class="zuce"><input type="image" src="img/5.png" height="40px" width="100px"/></span></div>
+                    <div>
+                    	<span class="type">版本：
+                    	<select name="type">
+                    	     <option value="1" selected="selected">默认版本</option>
+                    	     <option>网易邮箱6.0版</option>
+                        </select>
+                        </span>
+                         <span class="sll"><input type="text" size="12" value="正在使用SLL登录"/></span></div> 
+                 </form>
+                 </div>
+                 </li>
+                 </ul>
+			</div>
+		</section>
+		<footer>
+			<a href="#"><img src="img/6.png"/></a>
+			<nav>
+				<a href="#">网易首页</a>
+				<a href="#">关于网易免费邮</a>
+				<a href="#">网易智造</a>
+				<a href="#">网易&bull;有钱</a>
+				<a href="#">网易严选</a>
+				<a href="#">网易一起拼</a>
+				<span>|</span>
+				<span>网易公司版权所有&copy;1997-2017</span>
+				<br />
+				<a href="#">ICP证浙B2-201611021</a>
+			</nav>
+		</footer>
+	</body>
 </html>
+
